@@ -193,9 +193,27 @@ body {
     margin-bottom: 20px;
     text-align: right;
 }
+.main .head-casing {
+    position: relative;
+    border: var(--debg-borders) pink;
+    width: calc(8 * var(--title-size));
+}
 
     /* about me page */
-
+.main .text-wrapper {
+    
+    position: relative;
+    width: calc(8 * var(--title-size)); 
+    padding: 10px 10px 10px 10px;
+}
+.main .text-wrapper .abt-me {
+    font-size: var(--text-size);
+    font-family: var(--body);
+    text-align: justify;
+    text-indent: 5%;
+    margin-top: -0.75em;
+    
+}
 
 
 
@@ -233,11 +251,7 @@ body {
     width: calc(8 * var(--title-size)); 
     height: calc(8 * 11/8.5 * var(--title-size));
 }
-#resume.main .casing {
-    position: relative;
-    border: var(--debg-borders) pink;
-    width: calc(8 * var(--title-size));
-}
+
 
 
 

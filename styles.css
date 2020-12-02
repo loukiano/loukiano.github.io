@@ -18,6 +18,7 @@
     --shadow: #999ea7;
     --b-color: #d8b26e;
     --m-color: #b69b7d;
+    --focus-color: white;
 
     --title-size: 6.625rem;
     --subtitle-size: calc(5/9 * var(--title-size));
@@ -65,7 +66,10 @@ body {
     flex: 10 10 auto;
 }
 
-
+a:focus {
+    border: 3px solid var(--focus-color);
+    border-radius: 5px;
+}
 /* 
 --------------- HEADER --------------- 
 contains the back button and name text
@@ -254,6 +258,10 @@ contains the back button and name text
     background-size: contain;
     
 }
+.showcase .project-display a.proj-thumb img {
+    width: 100%;
+    height: 100%;
+}
 
 /*project label and description*/
 .proj-label {
@@ -282,8 +290,9 @@ contains the back button and name text
     text-align: center;
 }
 
+
 /*specific images for each project*/
-#SFC.project-display .proj-thumb {
+/*#SFC.project-display .proj-thumb {
     background-image: url("img/SFC-thumb.jpg");
     background-size: 100% 100%;
     background-color: var(--shadow);
@@ -292,7 +301,7 @@ contains the back button and name text
     background-image: url("img/GalOff-thumb.jpg");
     background-size: 100% 100%;
     background-color: var(--shadow);
-}
+}*/
 
 
 

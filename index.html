@@ -23,24 +23,28 @@
 
             <div class = "main" id = "home">
 
-                <h2>Project Showcase</h2>
+                <h2 aria-label = "section title">Project Showcase</h2>
                 <div class = "showcase">
                     <div class = "project-display" id="SFC">
-                        <a class = "proj-thumb" href = "projects/SFC.html" id = "SFC" aria-labeledby = "proj-link"></a>
-                        <p class = "proj-label"><a href = "projects/SFC.html" id = "proj-link">SF Crime Visualization</a></p>
-                        <p class = "proj-desc">Interactive map of crime reports in San Francisco's police districts</p>
+                        <a class = "proj-thumb" href = "projects/SFC.html" id = "SFC">
+                            <img src = "img/SFC-thumb.jpg" alt = "SF Crime visualization project thumbnail">
+                        </a>
+                        <p class = "proj-label" aria-label = "project title"><a href = "projects/SFC.html" id = "SFC-link" >SF Crime Visualization</a></p>
+                        <p class = "proj-desc" aria-label = "project description">Interactive map of crime reports in San Francisco's police districts</p>
                     </div>
                     <div class = "project-display" id="GalOff">
-                        <a class = "proj-thumb" href = "projects/NoProj.html" id = "GalOff" aria-labeledby = "proj-link"></a>
-                        <p class = "proj-label"><a href = "projects/NoProj.html" id = "proj-link">Galactic Offensive</a></p>
-                        <p class = "proj-desc">Endless arcade style shoot 'em up game</p>
+                        <a class = "proj-thumb" href = "projects/NoProj.html" id = "GalOff">
+                            <img src = "img/GalOff-thumb.jpg" alt = "Galactic Offensive project thumbnail">
+                        </a>
+                        <p class = "proj-label" aria-label = "project title"><a href = "projects/NoProj.html" id = "GalOff-link" >Galactic Offensive</a></p>
+                        <p class = "proj-desc" aria-label = "project description">Endless arcade style shoot 'em up game</p>
                     </div>
                 </div>
             </div>
 
             <div class="spacer"></div>
             
-            <div class = "sidebar">
+            <div class = "sidebar" aria-label = "navigation menu">
                 <p><a href = "resume.html">Resume</a></p>
                 <p><a href = "bio.html">About Me</a></p>
                 <p><a href = "projects.html">Projects</a></p>

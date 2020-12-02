@@ -24,7 +24,10 @@
     --menu-size: calc(1/3 * var(--title-size));
     --text-size: calc(2/9 * var(--title-size));
 
+    --main-width: calc(8 * var(--title-size));
+
     --debg-borders: none;
+
 }
 
 body {
@@ -52,6 +55,9 @@ body {
 .content {
     position: relative;
     z-index: 1;
+}
+.spacer {
+    flex: 10 10 auto;
 }
 
 
@@ -180,11 +186,13 @@ body {
 
 .main {
     border: var(--debg-borders) red;
-    flex-grow: 5;
+    flex: 0 1 auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    width: var(--main-width);
+    min-height: 90vh;
 }
 .main h2 {
     position: relative;
@@ -199,11 +207,13 @@ body {
 .main .head-casing {
     position: relative;
     border: var(--debg-borders) pink;
-    width: calc(8 * var(--title-size));
+    width: 100%;
 }
 
-/* home page */
-
+/* home page showcase of two projects*/
+#home.main {
+    width: calc(1.5 * var(--main-width));
+}
 .showcase {
     border: 3px var(--debg-borders) green;
     width: 75%;
@@ -213,26 +223,32 @@ body {
     justify-content: space-around;
 
 }
+
+/* Project blurb container*/
 .project-display {
     border: 3px solid var(--m-color);
-    width: calc(4 * var(--title-size));
+    width: calc(.5 * var(--main-width));
     padding: 5px 5px 0px 5px;
 }
+
+/*Clickable thumbnail image*/
 .showcase .project-display a.proj-thumb {
     border: 1px solid var(--b-color);
     display: block;
     width: 100%;
-    height: calc(4 * 3/5 * var(--title-size));
+    height: calc(3/5 * .5*var(--main-width));
     background-size: contain;
     
 }
+
+/*project label and description*/
 .proj-label {
     position: relative;
     font-family: var(--title);
     font-size: var(--menu-size);
     text-align: center;
     border-bottom: 3px solid var(--b-color);
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 
     height: var(--menu-size);
     margin-top: calc(-.1 * var(--menu-size));
@@ -252,14 +268,13 @@ body {
     text-align: center;
 }
 
-
-
-.showcase #SFC.project-display .proj-thumb {
+/*specific images for each project*/
+#SFC.project-display .proj-thumb {
     background-image: url("img/SFC-thumb.jpg");
     background-size: 100% 100%;
     background-color: var(--shadow);
 }
-.showcase #GalOff.project-display .proj-thumb {
+#GalOff.project-display .proj-thumb {
     background-image: url("img/GalOff-thumb.jpg");
     background-size: 100% 100%;
     background-color: var(--shadow);
@@ -269,7 +284,6 @@ body {
 
     /* about me page */
 .main .text-wrapper {
-    
     position: relative;
     width: calc(8 * var(--title-size)); 
     padding: 10px 10px 10px 10px;
@@ -284,6 +298,7 @@ body {
 }
 
 
+/* SFC Project display page */
 
 
 
@@ -296,11 +311,9 @@ body {
 .main .resume-img {
     border: 2px solid var(--b-color);
     position: relative;
-    width: calc(8 * var(--title-size)); 
-    height: calc(8 * 11/8.5 * var(--title-size));
+    width: var(--main-width); 
+    height: calc(11/8.5 * var(--main-width));
 }
-
-
 
 
 .dl-link {

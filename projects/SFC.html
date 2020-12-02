@@ -12,13 +12,13 @@
     </div>
 
     <div class = "content">
-        <div class = "header">
-            <div class = "head-space">
-                <a class = "back-button" href = "../index.html">< Home</a>
+       <header role = "banner">
+           <div class = "head-space">
+                <a class = "back-button" href = "../index.html" aria-label = "home button">< Home</a>
             </div>
             <h1><a href = "../index.html">Luke Arnold</a></h1>
-        </div>
-        <div class = "content-container"> 
+        </header>
+        <main role = "main" class = "content-container"> 
 
             <div class = "spacer"></div>
 
@@ -28,27 +28,40 @@
                 </div>
                 <div class = "body-wrapper">
                     <p>For this project, I used the Python matplotlib and pandas libraries to process and visualize 2016 crime report data from San Francisco's 10 police districts. I decided to parse the data by time of day, and created an interface that allows the user to scroll through the day, responsively updating the plot.</p> 
-                    <img src = "../img/SFC-thumb.jpg" class = "proj-page-img">
-                    <p class = "caption">Fig. 1: Total reports in every district at 15:00</p>
+                    <figure role = "group">
+                        <img src = "../img/SFC-thumb.jpg" class = "proj-page-img" alt = "locations of crime reports in San fransisco denoted by colored dots on a map">
+                        <figcaption>
+                            <p class = "caption" id = "fig1-label">Fig. 1: Total reports in every district at 15:00</p>
+                        </figcaption>
+                        
+                    </figure>
                     <p>Users are also able to individually show or hide specific districts. This allows for easier comparison between times and districts.</p>
-                    <img src = "../img/SFC-ex3.jpg" class = "proj-page-img">
-                    <p class = "caption">Fig. 2: Total reports in the districts of Taraval, the Tenderloin, and Bayview at 15:00</p>
-                    <img src = "../img/SFC-ex1.jpg" class = "proj-page-img">
-                    <p class = "caption">Fig. 3: Total reports in the districts of Taraval, the Tenderloin, and Bayview at 03:00</p>
+                    <figure role = "group">
+                        <img src = "../img/SFC-ex1.jpg" class = "proj-page-img" alt = "the same map showing three districts. Tenderloin has a high crime density, while Taraval and Bayview have medium densities">
+                        <figcaption>
+                            <p class = "caption" id = "fig2-label">Fig. 2: Total reports in the districts of Taraval, the Tenderloin, and Bayview at 15:00</p>
+                        </figcaption>
+                    </figure>
+                    <figure role = "group">
+                        <img src = "../img/SFC-ex2.jpg" class = "proj-page-img" alt = "the same three districts as figure 2, but Taraval and Bayview have significantly less crime reports than at 15:00. Tenderloin is comparable to Figure 2.">
+                        <figcaption>
+                            <p class = "caption" id = "fig3-label">Fig. 3: Total reports in the districts of Taraval, the Tenderloin, and Bayview at 03:00</p>
+                        </figcaption>
+                    </figure>
                     
                 </div>
             </div>
             
             <div class = "spacer"></div>
 
-            <div class = "sidebar">
+            <nav role = "nav "class = "sidebar" aria-label = "Main Navigation Menu">
                 <p><a href = "../resume.html">Resume</a></p>
                 <p><a href = "../bio.html">About Me</a></p>
                 <p><a href = "../projects.html">Projects</a></p>
                 <p><a href = "https://github.com/lukiearno" rel="noreferrer noopener" target = "_blank">Github</a></p>
                 <p><a href = "https://www.linkedin.com/in/luke-arnold-739b041aa/" rel="noreferrer noopener" target = "_blank">LinkedIn</a></p>
-            </div>
-        </div>
+            </nav>
+        </main>
     </div>
     </body>
 </html>

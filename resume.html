@@ -12,13 +12,13 @@
     </div>
 
     <div class = "content">
-        <div class = "header">
+        <header role = "banner">
             <div class = "head-space">
-                <a class = "back-button" href = "index.html">< Home</a>
+                <a class = "back-button" href = "index.html" aria-label = "home button">< Home</a>
             </div>
-            <h1><a href = "index.html">Luke Arnold</a></h1>
-        </div>
-        <div class = "content-container"> 
+            <h1><a href = "index.html" aria-label = "to home page">Luke Arnold</a></h1>
+        </header>
+        <main role = "main" class = "content-container"> 
             <div class = "spacer"></div>
 
             <div class = "main" id = "resume">
@@ -27,19 +27,19 @@
                         Resume 
                     </h2>
                 </div>
-                <img class = "resume-img" src="img/resume_8-27-20.jpg" alt = "Luke Arnold Resume Image">
+                <img class = "resume-img" src="img/resume_8-27-20.jpg" alt = "Luke Arnold Resume">
             </div>
 
             <div class = "spacer"></div>
 
-            <div class = "sidebar">
+            <nav role = "nav "class = "sidebar" aria-label = "Main Navigation Menu">
                 <p><a href = "resume.html">Resume</a></p>
                 <p><a href = "bio.html">About Me</a></p>
                 <p><a href = "projects.html">Projects</a></p>
                 <p><a href = "https://github.com/lukiearno" rel="noreferrer noopener" target = "_blank">Github</a></p>
                 <p><a href = "https://www.linkedin.com/in/luke-arnold-739b041aa/" rel="noreferrer noopener" target = "_blank">LinkedIn</a></p>
-            </div>
-        </div>
+            </nav>
+        </main>
     </div>
     </body>
 </html>

@@ -74,7 +74,7 @@ a:focus {
 --------------- HEADER --------------- 
 contains the back button and name text
 */
-.header {
+header {
     border-top: var(--debg-borders) green;
     display: flex;
     justify-content: flex-end;
@@ -82,7 +82,7 @@ contains the back button and name text
     border-bottom: 3px solid var(--shadow);
     height: calc(1 * var(--title-size));
 }
-.header h1 {
+header h1 {
     border: var(--debg-borders) blue;
 
     font-family: var(--title);
@@ -99,7 +99,7 @@ contains the back button and name text
 
     position: relative;
 }
-.header h1 a {
+header h1 a {
     text-decoration: none;
     color: var(--b-color);
 
@@ -132,7 +132,7 @@ contains the back button and name text
     border: solid var(--shadow);
     color: var(--dark);
 }
-.header .back-button {
+header .back-button {
     top: -8px;
 }
 .back-button:hover {
@@ -291,18 +291,6 @@ contains the back button and name text
 }
 
 
-/*specific images for each project*/
-/*#SFC.project-display .proj-thumb {
-    background-image: url("img/SFC-thumb.jpg");
-    background-size: 100% 100%;
-    background-color: var(--shadow);
-}
-#GalOff.project-display .proj-thumb {
-    background-image: url("img/GalOff-thumb.jpg");
-    background-size: 100% 100%;
-    background-color: var(--shadow);
-}*/
-
 
 
 /* 
@@ -342,10 +330,12 @@ a.email:hover {
 /* 
 --------------- SFC PROJECT --------------- 
 */
+#SFC.main figure {
+    margin-left: 0px;
+}
 .proj-page-img {
     width: calc(.9*var(--main-width));
     border: 2px solid var(--b-color);
-    margin-left: calc(.05 * var(--main-width));
 } 
 .body-wrapper .caption {
     font-size: var(--caption-size);

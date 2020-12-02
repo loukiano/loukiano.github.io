@@ -33,7 +33,7 @@
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 930px) {
     body {
         --title-size: 10vw;
         --subtitle-size: calc(5/9 * var(--title-size));

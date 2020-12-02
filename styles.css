@@ -28,7 +28,7 @@
 
     --main-width: calc(8 * var(--title-size));
 
-    --debg-borders: dotted;
+    --debg-borders: none;
 
 
 

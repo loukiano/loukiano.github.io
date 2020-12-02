@@ -102,7 +102,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
-    top: -8px;
+    
 
     font-family: var(--title);
     font-size: var(--text-size);
@@ -113,6 +113,9 @@ body {
 
     border: solid var(--shadow);
     color: var(--dark);
+}
+.header .back-button {
+    top: -8px;
 }
 .back-button:hover {
     color: var(--b-color);
@@ -199,6 +202,71 @@ body {
     width: calc(8 * var(--title-size));
 }
 
+/* home page */
+
+.showcase {
+    border: 3px var(--debg-borders) green;
+    width: 75%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.project-display {
+    border: 3px solid var(--m-color);
+    width: calc(4 * var(--title-size));
+    padding: 5px 5px 0px 5px;
+}
+.showcase .project-display a.proj-thumb {
+    border: 1px solid var(--b-color);
+    display: block;
+    width: 100%;
+    height: calc(4 * 3/5 * var(--title-size));
+    background-size: contain;
+    
+}
+.proj-label {
+    position: relative;
+    font-family: var(--title);
+    font-size: var(--menu-size);
+    text-align: center;
+    border-bottom: 3px solid var(--b-color);
+    padding-bottom: 2px;
+
+    height: var(--menu-size);
+    margin-top: calc(-.1 * var(--menu-size));
+}
+.proj-label a {
+    color: var(--dark);
+    text-decoration: none;
+}
+.proj-label a:hover {
+    color: var(--b-color);
+}
+.proj-desc {
+    position: relative;
+    font-family: var(--body);
+    font-size: var(--text-size);
+    margin: calc(-1.5 * var(--text-size)) auto auto auto;
+    text-align: center;
+}
+
+
+
+.showcase #SFC.project-display .proj-thumb {
+    background-image: url("img/SFC-thumb.jpg");
+    background-size: 100% 100%;
+    background-color: var(--shadow);
+}
+.showcase #GalOff.project-display .proj-thumb {
+    background-image: url("img/GalOff-thumb.jpg");
+    background-size: 100% 100%;
+    background-color: var(--shadow);
+}
+
+
+
     /* about me page */
 .main .text-wrapper {
     
@@ -217,29 +285,9 @@ body {
 
 
 
-.showcase {
-    /*border-style: solid;*/
-    width: 75%;
-    height: 30%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-
-}
 
 
 
-.project-display {
-    
-    border-style: solid;
-    border-color: purple;
-    width: 33%;
-    height: 95%;
-}
-.main .spacer {
-    height: 10%;
-}
 
 /*
     Resume Page

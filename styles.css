@@ -42,6 +42,7 @@ body {
     flex-flow: column nowrap;
     font-family: var(--body);
     font-size: var(--text-size);
+    color: var(--dark);
     background-image: url("img/paper_background.jpg"); 
     background-size: 110% 110%;   
     background-color: var(--light);

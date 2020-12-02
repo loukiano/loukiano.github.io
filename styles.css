@@ -19,7 +19,7 @@
     --b-color: #d8b26e;
     --m-color: #b69b7d;
 
-    --title-size: 90px;
+    --title-size: 6.625rem;
     --subtitle-size: calc(5/9 * var(--title-size));
     --menu-size: calc(1/3 * var(--title-size));
     --text-size: calc(2/9 * var(--title-size));
@@ -28,6 +28,8 @@
     --main-width: calc(8 * var(--title-size));
 
     --debg-borders: none;
+
+
 
 }
 
@@ -39,6 +41,7 @@ body {
     min-height: 95vh;
     flex-flow: column nowrap;
     font-family: var(--body);
+    font-size: var(--text-size);
     background-image: url("img/paper_background.jpg"); 
     background-size: 110% 110%;   
     background-color: var(--light);
@@ -62,7 +65,10 @@ body {
 }
 
 
-
+/* 
+--------------- HEADER --------------- 
+contains the back button and name text
+*/
 .header {
     border-top: var(--debg-borders) green;
     display: flex;
@@ -147,8 +153,8 @@ body {
 }
 
 
-/*
-    Sidebar Navigation Menu
+/* 
+--------------- SIDEBAR NAV --------------- 
 */
 .sidebar {
     /*
@@ -175,16 +181,14 @@ body {
 }
 .sidebar a:hover {
     color: var(--b-color);
-
-
 }
 
 
 
-/*
-    Main content panel
-*/
 
+/* 
+--------------- MAIN PANEL --------------- 
+*/
 .main {
     border: var(--debg-borders) red;
     flex: 0 1 auto;
@@ -196,31 +200,39 @@ body {
     min-height: 90vh;
 }
 .main h2 {
+    border: 4px var(--debg-borders) blue;
     position: relative;
-    top: 10px;
     font-size: var(--subtitle-size);
+    top: -.75em;
     color: var(--dark);
     border-bottom: 3px solid var(--b-color);
     height: 1.2em;
-    margin-bottom: 20px;
     text-align: right;
 }
 .main .head-casing {
     position: relative;
-    border: var(--debg-borders) pink;
+    border: 6px var(--debg-borders) purple;
     width: 100%;
+    height: calc(1.3 * var(--subtitle-size));
 }
 
+
+/* 
+--------------- HOMEPAGE --------------- 
+*/
 /* home page showcase of two projects*/
 #home.main {
     width: calc(1.75 * var(--main-width));
+}
+#home.main h2 {
+    top: 1em;
 }
 .showcase {
     border: 3px var(--debg-borders) green;
     width: 75%;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 
 }
@@ -229,7 +241,7 @@ body {
 .project-display {
     border: 3px none var(--m-color);
     width: calc(.5 * var(--main-width));
-    padding: 10px 10px 5px 10px;
+    padding: 20px 10px 5px 10px;
 }
 
 /*Clickable thumbnail image*/
@@ -283,23 +295,43 @@ body {
 
 
 
-    /* about me page */
+/* 
+--------------- BIO --------------- 
+*/
 .main .body-wrapper {
+    border: 2px var(--debg-borders) orange;
     position: relative;
     width: var(--main-width); 
     padding: 10px 10px 10px 10px;
     font-size: var(--text-size);
     font-family: var(--body);
-    margin-top: -1.5em;
+    margin-top: -1.25em;
     text-align: justify;
     text-indent: 5%;
 }
-.main .body-wrapper .abt-me {
-    
+
+
+.main .body-wrapper .info {
+    text-align: right;
+    position: relative;
 }
-
-
-/* SFC Project display page */
+#head.info {
+    text-decoration: underline;
+    text-decoration-color: var(--b-color);
+}
+#email.info {
+    top: -1em;
+}
+a.email {
+    color: var(--dark);
+    text-decoration: none;
+}
+a.email:hover {
+    color: var(--b-color);
+}
+/* 
+--------------- SFC PROJECT --------------- 
+*/
 .proj-page-img {
     width: calc(.9*var(--main-width));
     border: 2px solid var(--b-color);
@@ -317,10 +349,9 @@ body {
 
 
 
-/*
-    Resume Page
+/* 
+--------------- RESUME --------------- 
 */
-
 .main .resume-img {
     border: 2px solid var(--b-color);
     position: relative;
@@ -340,4 +371,14 @@ body {
 }
 .dl-link a:hover {
     color: var(--b-color);
+}
+
+/* 
+--------------- ERROR/NOT FOUND --------------- 
+*/
+#error.main h2 {
+    font-size: var(--menu-size);
+    font-family: var(--title);
+    text-align: center;
+    height: auto;
 }
